@@ -101,6 +101,16 @@
     overflow: hidden;
     height: auto;
     width: 644px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .cream-bread__image img {
     width: 100%;
@@ -108,6 +118,9 @@
   }
   .cream-bread__info {
     background-image: url("../img/bg-img.png");
+    width: 520px;
+    height: 337px;
+    margin-top: -27px;
   }
 }
 
