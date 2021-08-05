@@ -82,9 +82,13 @@
   }
   .cream-bread__heading {
     left: 0;
-    margin: 28px 0 0 44px;
-    margin-right: -50px;
+    margin: 3.733vw 0 0 5.867vw;
+    margin-right: -6.667vw;
     z-index: 1;
+  }
+  .cream-bread__heading img {
+    width: 14.933vw;
+    height: 92.933vw;
   }
   .cream-bread__wrapper {
     display: -webkit-box;
@@ -97,7 +101,7 @@
     position: relative;
   }
   .cream-bread__image {
-    margin-top: 69px;
+    margin-top: 9.200vw;
     overflow: hidden;
     height: auto;
     width: 644px;
@@ -114,13 +118,14 @@
   }
   .cream-bread__image img {
     width: 100%;
-    height: 422px;
+    height: 56.267vw;
   }
   .cream-bread__info {
     background-image: url("../img/bg-img.png");
-    width: 520px;
-    height: 337px;
-    margin-top: -27px;
+    width: 69.333vw;
+    height: 44.933vw;
+    margin-top: -3.600vw;
+    font-size: 2.667vw;
   }
 }
 
