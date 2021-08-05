@@ -8,81 +8,47 @@ main {
           justify-content: center;
 }
 
-.main {
-  width: 768px;
-}
-
-.main__heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 115px;
-}
-
-.banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.banner__heading {
-  font-size: 11.198vw;
-  color: #221714;
-  text-align: center;
-  font-family: toppan-bunkyu-mincho-pr6n, serif;
-  font-style: normal;
-  font-weight: 900;
-}
-
-.banner__text {
-  font-size: 29px;
-  text-align: center;
-  line-height: 46px;
-  color: #221714;
-}
-
-.banner__img {
-  width: 271px;
-  height: 65px;
-  margin: auto;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
+  .main {
+    width: 100vw;
+  }
+  .main__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 15.333vw;
+  }
   .banner {
     background-color: #fbf4d4;
-    padding: 55px 0;
+    padding: 7.333vw 0;
   }
   .banner__heading {
-    font-size: 70px;
+    font-size: 9.333vw;
     color: #221714;
     text-align: center;
     font-family: Kozuka Gothic Pr6N;
     font-style: normal;
     font-weight: 900;
-    margin-bottom: 24px;
+    margin-bottom: 3.200vw;
   }
   .banner__heading--sub {
-    font-size: 32px;
+    font-size: 4.267vw;
     color: #221714;
     text-align: center;
-    margin: 0 0 48px 0;
+    margin: 0 0 6.400vw 0;
     background-image: url("../img/パス.png");
     background-repeat: no-repeat;
     background-position: center bottom;
-    height: 38px;
+    height: 5.067vw;
   }
   .banner__wrapper {
-    width: 665px;
+    width: 88.667vw;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,19 +59,19 @@ main {
             flex-direction: column;
   }
   .banner__img-select {
-    width: 271px;
-    height: 65px;
+    width: 36.133vw;
+    height: 8.667vw;
     margin: auto;
-    padding-bottom: 61px;
+    padding-bottom: 8.133vw;
   }
   .banner__img-dot {
-    width: 323px;
+    width: 43.067vw;
     margin: auto;
   }
   .banner__text {
-    font-size: 29px;
+    font-size: 3.867vw;
     text-align: center;
-    line-height: 46px;
+    line-height: 6.133vw;
     color: #221714;
   }
 }
