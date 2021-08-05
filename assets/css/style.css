@@ -80,58 +80,11 @@
     line-height: 6.133vw;
     color: #221714;
   }
-  .cream-bread__title {
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-    text-align: center;
-    background-color: #b23d87;
-    font-size: 41px;
-    color: white;
-    width: 50px;
-    height: 456px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .cream-bread__title--sub {
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-    text-align: center;
-    background-color: #b23d87;
-    font-size: 41px;
-    color: white;
-    width: 50px;
-    height: 549px;
-    margin-right: 10px;
-    margin-top: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .cream-bread__title--wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    position: absolute;
+  .cream-bread__heading {
     left: 0;
+    margin: 28px 0 0 44px;
+    margin-right: -50px;
+    z-index: 1;
   }
   .cream-bread__wrapper {
     display: -webkit-box;
@@ -141,10 +94,20 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     position: relative;
+  }
+  .cream-bread__image {
+    margin-top: 69px;
+    overflow: hidden;
+    height: auto;
+    width: 644px;
+  }
+  .cream-bread__image img {
+    width: 100%;
+    height: 422px;
+  }
+  .cream-bread__info {
+    background-image: url("../img/bg-img.png");
   }
 }
 
