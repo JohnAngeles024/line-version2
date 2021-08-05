@@ -1,27 +1,23 @@
-
-
-
-
-
 @media only screen and (max-width: 750px) {
     .main {
-        width:  100vw;
+        width: 100vw;
         display: flex;
         justify-content: center;
         flex-direction: column;
-    
+
         &__heading {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 15.333vw;
-            img{
+
+            img {
                 width: 18.933vw;
                 height: 6.400vw;
             }
         }
     }
-    
+
 
     .banner {
         background-color: #fbf4d4;
@@ -44,7 +40,7 @@
                 background-image: url("../img/パス.png");
                 background-repeat: no-repeat;
                 background-position: center bottom;
-                background-size:75.467vw 2.133vw;
+                background-size: 75.467vw 2.133vw;
                 height: 5.067vw;
             }
         }
@@ -76,6 +72,51 @@
             text-align: center;
             line-height: 6.133vw;
             color: #221714;
+        }
+
+    }
+
+    .cream-bread {
+        &__title {
+            writing-mode: vertical-rl;
+            text-align: center;
+            background-color: #b23d87;
+            font-size: 41px;
+            color: white;
+            width: 50px;
+            height: 456px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &--sub {
+                writing-mode: vertical-rl;
+                text-align: center;
+                background-color: #b23d87;
+                font-size: 41px;
+                color: white;
+                width: 50px;
+                height: 549px;
+                margin-right: 10px;
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &--wrapper {
+                display: flex;
+                flex-direction: row-reverse;
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        &__wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            position: relative;
         }
 
     }
