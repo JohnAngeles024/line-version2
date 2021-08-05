@@ -1,16 +1,17 @@
 @charset "UTF-8";
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 @media only screen and (max-width: 750px) {
   .main {
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .main__heading {
     display: -webkit-box;
@@ -23,6 +24,10 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
     height: 15.333vw;
+  }
+  .main__heading img {
+    width: 18.933vw;
+    height: 6.400vw;
   }
   .banner {
     background-color: #fbf4d4;
@@ -45,6 +50,7 @@ main {
     background-image: url("../img/パス.png");
     background-repeat: no-repeat;
     background-position: center bottom;
+    background-size: 75.467vw 2.133vw;
     height: 5.067vw;
   }
   .banner__wrapper {
