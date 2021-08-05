@@ -1,6 +1,103 @@
-.description{
-color: red;
-font-size: 50px;
-text-align: center;
-margin: 20px;
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 768px;
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 115px;
+    }
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        font-size: 11.198vw;
+        color: #221714;
+        text-align: center;
+        font-family: toppan-bunkyu-mincho-pr6n, serif;
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    &__text {
+        font-size: 29px;
+        text-align: center;
+        line-height: 46px;
+        color: #221714;
+    }
+
+    &__img {
+        width: 271px;
+        height: 65px;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .banner {
+        background-color: #fbf4d4;
+        padding: 55px 0;
+
+        &__heading {
+            font-size: 70px;
+            color: #221714;
+            text-align: center;
+            font-family: Kozuka Gothic Pr6N;
+            font-style: normal;
+            font-weight: 900;
+            margin-bottom: 24px;
+
+            &--sub {
+                font-size: 32px;
+                color: #221714;
+                text-align: center;
+                margin: 0 0 48px 0;
+                background-image: url("../img/_パス_.png");
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                height: 38px;
+            }
+        }
+
+        &__wrapper {
+            width: 665px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__img {
+            &-select {
+                width: 271px;
+                height: 65px;
+                margin: auto;
+                padding-bottom: 61px;
+            }
+
+            &-dot {
+                width: 323px;
+                margin: auto;
+            }
+
+        }
+
+        &__text {
+            font-size: 29px;
+            text-align: center;
+            line-height: 46px;
+            color: #221714;
+        }
+
+    }
 }
