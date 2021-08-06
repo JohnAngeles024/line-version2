@@ -36,7 +36,15 @@
             }
 
             &:nth-child(n+2){
+              
                 .content{
+                    display: flex;
+                   
+                    &__wrapper {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 100%;
+                    }
                     &-data{
                         &__btn {
                             width: 30.990vw;
