@@ -221,28 +221,28 @@
     line-height: 5.867vw;
   }
   .content-figure__price {
-    font-size: 48px;
+    font-size: 6.400vw;
     font-weight: 900;
   }
   .content-figure__price::after {
     content: '円';
-    font-size: 32px;
+    font-size: 4.267vw;
   }
   .content-figure__list {
-    border-top: 3px solid transparent;
-    padding-top: 16px;
+    border-top: 0.400vw solid transparent;
+    padding-top: 2.133vw;
     -o-border-image: url("../img/border-bg.png") 30;
        border-image: url("../img/border-bg.png") 30;
-    margin-top: 14px;
+    margin-top: 1.867vw;
   }
   .content-figure__item {
-    font-size: 24px;
-    line-height: 28px;
-    margin-left: 27px;
+    font-size: 3.200vw;
+    line-height: 3.733vw;
+    margin-left: 3.600vw;
   }
   .content-figure__item::before {
     content: '※';
-    margin-left: -27px;
+    margin-left: -3.600vw;
   }
   .content__description {
     font-family: [GothicBBBPro];
@@ -286,7 +286,7 @@
   }
   .content-data__item:nth-child(1)::before {
     content: "";
-    background-image: url("../img/icon01.png");
+    background-image: url("../img/icon02.png");
     width: 3.255vw;
     height: 3.255vw;
     margin-top: 0.911vw;
@@ -298,7 +298,31 @@
   }
   .content-data__item:nth-child(2)::before {
     content: "";
-    background-image: url("../img/icon02.png");
+    background-image: url("../img/icon03.png");
+    width: 3.255vw;
+    height: 3.255vw;
+    margin-top: 0.911vw;
+    margin-left: -4.036vw;
+    margin-right: 2.214vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content-data__item:nth-child(3)::before {
+    content: "";
+    background-image: url("../img/icon04.png");
+    width: 3.255vw;
+    height: 3.255vw;
+    margin-top: 0.911vw;
+    margin-left: -4.036vw;
+    margin-right: 2.214vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content-data__item:nth-child(4)::before {
+    content: "";
+    background-image: url("../img/icon05.png");
     width: 3.255vw;
     height: 3.255vw;
     margin-top: 0.911vw;
