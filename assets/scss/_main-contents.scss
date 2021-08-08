@@ -30,6 +30,13 @@
                     &__heading {
                         margin-left: -6.667vw;
                     }
+
+                    &-data {
+                        
+                        &__btn {
+                            background-color: white;
+                        }
+                    }
                 }
             }
 
@@ -45,21 +52,25 @@
                     }
 
                     &-data {
+                        
                         &__btn {
                             width: 30.990vw;
                             height: 7.813vw;
-                            background-color: white;
+                            // background-color: white;
                             color: #d27c59;
-                            font-size: 3.906vw;
+                            font-size: 31px;
                             font-family: SFPro, Arial, Noto Sans JP, Noto Sans KR, sans-serif;
-                            border-radius: 0.651vw;
-                            border: none;
+                            border-radius: 35px;
+                            border: 1px solid #000000;
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            margin-bottom: 0;
+                            color: #000000;
 
                             &:nth-child(2) {
                                 margin-left: 1.953vw;
+                                font-size: 34px;
                             }
 
                             &-wrapper {
@@ -71,8 +82,9 @@
                         }
                     }
                 }
-
             }
+
+            
         }
     }
 
