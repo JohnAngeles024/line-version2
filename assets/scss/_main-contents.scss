@@ -30,22 +30,21 @@
                     &__heading {
                         margin-left: -6.667vw;
                     }
-
                 }
-
             }
 
-            &:nth-child(n+2){
-              
-                .content{
+            &:nth-child(n+2) {
+
+                .content {
                     display: flex;
-                   
+
                     &__wrapper {
                         display: flex;
                         justify-content: flex-end;
                         width: 100%;
                     }
-                    &-data{
+
+                    &-data {
                         &__btn {
                             width: 30.990vw;
                             height: 7.813vw;
@@ -58,11 +57,11 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-            
+
                             &:nth-child(2) {
                                 margin-left: 1.953vw;
                             }
-            
+
                             &-wrapper {
                                 display: flex;
                                 flex-direction: row;
@@ -72,7 +71,7 @@
                         }
                     }
                 }
-              
+
             }
         }
     }
@@ -183,19 +182,22 @@
                 height: 44.933vw;
                 margin-top: -3.600vw;
                 font-size: 2.667vw;
+                
+                &--wrapper{
+                    padding: 3.733vw;
+                }
             }
 
-            &__title{
+            &__title {
                 font-size: 3.200vw;
-                padding-top: 3.733vw;
             }
 
-            &__heading{
+            &__heading {
                 font-size: 4.533vw;
                 line-height: 5.867vw;
             }
 
-            &__price{
+            &__price {
                 font-size: 6.400vw;
                 font-weight: 900;
             }
@@ -287,7 +289,7 @@
             }
 
             &__btn {
-                width:30.667vw;
+                width: 30.667vw;
                 height: 8.667vw;
                 background-color: #fbf4d4;
                 color: #000000;
