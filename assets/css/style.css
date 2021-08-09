@@ -71,8 +71,8 @@
     color: #d27c59;
     font-size: 4.133vw;
     font-family: SFPro, Arial, Noto Sans JP, Noto Sans KR, sans-serif;
-    border-radius: 35px;
-    border: 1px solid #000000;
+    border-radius: 4.667vw;
+    border: 0.133vw solid #000000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -207,10 +207,21 @@
             align-items: center;
     z-index: 0;
   }
-  .content-figure img {
+  .content-figure__img {
     width: 100%;
     height: 56.267vw;
-    z-index: -2;
+    z-index: -1;
+    margin-bottom: -3.600vw;
+  }
+  .content-figure__img--05 {
+    width: 70vw;
+    height: 111.333vw;
+    margin-bottom: 3.600vw;
+  }
+  .content-figure__img--07 {
+    width: 67.600vw;
+    height: 47.200vw;
+    margin-bottom: 3.600vw;
   }
   .content-figure__caption {
     position: relative;
@@ -218,7 +229,6 @@
     background-size: 69.333vw 100%;
     width: 69.333vw;
     height: auto;
-    margin-top: -3.600vw;
     font-size: 2.667vw;
   }
   .content-figure__caption::before {
@@ -244,9 +254,18 @@
   .content-figure__price {
     font-size: 6.400vw;
     font-weight: 900;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content-figure__price span {
+    font-size: 4.267vw;
   }
   .content-figure__price::after {
-    content: '円';
+    content: '';
     font-size: 4.267vw;
   }
   .content-figure__list {
@@ -284,12 +303,42 @@
     font-weight: 900;
     font-size: 3.255vw;
   }
+  .content-data__title {
+    font-size: 3.467vw;
+    line-height: 5.067vw;
+    padding-left: 1.600vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content-data__title::before {
+    content: "";
+    width: 3.255vw;
+    height: 3.255vw;
+    margin-top: 0.911vw;
+    margin-left: -1.467vw;
+    margin-right: 0.667vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/icon01.png");
+  }
   .content-data__text {
-    font-size: 3.516vw;
+    font-size: 3.467vw;
     margin-bottom: 1.302vw;
   }
   .content-data__text--sub {
-    font-size: 2.604vw;
+    font-size: 3.467vw;
+    padding-left: 1.600vw;
+    line-height: 5.067vw;
+  }
+  .content-data__text--sub::before {
+    content: '※';
+    margin-left: -1.467vw;
+    margin-right: 0.667vw;
   }
   .content-data__item {
     line-height: 5.067vw;
@@ -307,8 +356,8 @@
     width: 3.255vw;
     height: 3.255vw;
     margin-top: 0.911vw;
-    margin-left: -11px;
-    margin-right: 5px;
+    margin-left: -1.467vw;
+    margin-right: 0.667vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
