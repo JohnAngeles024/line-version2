@@ -31,8 +31,16 @@
                         margin-left: -6.667vw;
                     }
 
+                    &-figure {
+                        &__caption {
+                            &::before {
+                                transform: scaleX(-1);
+                            }
+                        }
+                    }
+
                     &-data {
-                        
+
                         &__btn {
                             background-color: white;
                         }
@@ -52,7 +60,7 @@
                     }
 
                     &-data {
-                        
+
                         &__btn {
                             width: 30.990vw;
                             height: 7.813vw;
@@ -83,7 +91,7 @@
                 }
             }
 
-            
+
         }
     }
 
@@ -99,7 +107,7 @@
             font-family: Kozuka Gothic Pr6N;
             font-style: normal;
             font-weight: 900;
-            margin-bottom: 3.200vw;
+            margin: 1.333vw 0 3.200vw 0;
 
             &--sub {
                 font-size: 4.267vw;
@@ -179,20 +187,35 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            z-index: 0;
 
             img {
                 width: 100%;
                 height: 56.267vw;
+                z-index: -2;
             }
 
+
             &__caption {
-                background-image: url('../img/bg-img.png');
+                position: relative;
                 background-repeat: no-repeat;
-                background-size:69.333vw 100%;
+                background-size: 69.333vw 100%;
                 width: 69.333vw;
                 height: auto;
                 margin-top: -3.600vw;
                 font-size: 2.667vw;
+
+
+                &::before {
+                    content: '';
+                    background-image: url('../img/bg-img.png');
+                    background-repeat: no-repeat;
+                    background-size: 69.333vw 100%;
+                    width: 69.333vw;
+                    height: 100%;
+                    position: absolute;
+                    z-index: -1;
+                }
 
                 &--wrapper {
                     padding: 3.733vw;
@@ -206,13 +229,14 @@
             &__heading {
                 font-size: 4.533vw;
                 line-height: 5.867vw;
-                
+
             }
 
             &__price {
                 font-size: 6.400vw;
                 font-weight: 900;
-                &::after{
+
+                &::after {
                     content: '円';
                     font-size: 4.267vw;
                 }
@@ -221,15 +245,16 @@
             &__list {
                 border-top: 0.400vw solid transparent;
                 padding-top: 2.133vw;
-                border-image: url("../img/border-bg.png") 30 ;
+                border-image: url("../img/border-bg.png") 30;
                 margin-top: 1.867vw;
             }
 
-            &__item{
+            &__item {
                 font-size: 3.200vw;
                 line-height: 3.733vw;
                 margin-left: 3.600vw;
-                &::before{
+
+                &::before {
                     content: '※';
                     margin-left: -3.600vw;
                 }
@@ -249,14 +274,8 @@
 
 
         &-data {
-            // width: 90%;
-            // margin-top: 2.604vw;
-            // padding: 3.906vw 0 3.906vw 0;
-            // background: #efedd8;
-
             &__wrapper {
                 padding-top: 2.604vw;
-                // width: 80%;
                 margin: auto;
             }
 
@@ -284,66 +303,44 @@
                 display: flex;
                 align-items: flex-start;
 
+                &::before {
+                    content: "";
+                    width: 3.255vw;
+                    height: 3.255vw;
+                    margin-top: 0.911vw;
+                    margin-left: -11px;
+                    margin-right: 5px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
 
                 &:nth-child(1) {
                     &::before {
-                        content: "";
                         background-image: url('../img/icon02.png');
-                        width: 3.255vw;
-                        height: 3.255vw;
-                        margin-top: 0.911vw;
-                        margin-left: -4.036vw;
-                        margin-right: 2.214vw;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-
                     }
                 }
 
                 &:nth-child(2) {
                     &::before {
-                        content: "";
                         background-image: url('../img/icon03.png');
-                        width: 3.255vw;
-                        height: 3.255vw;
-                        margin-top: 0.911vw;
-                        margin-left: -4.036vw;
-                        margin-right: 2.214vw;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
                     }
                 }
+
                 &:nth-child(3) {
                     &::before {
-                        content: "";
                         background-image: url('../img/icon04.png');
-                        width: 3.255vw;
-                        height: 3.255vw;
-                        margin-top: 0.911vw;
-                        margin-left: -4.036vw;
-                        margin-right: 2.214vw;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
                     }
                 }
+
                 &:nth-child(4) {
                     &::before {
-                        content: "";
                         background-image: url('../img/icon05.png');
-                        width: 3.255vw;
-                        height: 3.255vw;
-                        margin-top: 0.911vw;
-                        margin-left: -4.036vw;
-                        margin-right: 2.214vw;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
                     }
                 }
             }

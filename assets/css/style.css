@@ -44,6 +44,10 @@
   .main__item:nth-child(even) .content__heading {
     margin-left: -6.667vw;
   }
+  .main__item:nth-child(even) .content-figure__caption::before {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
   .main__item:nth-child(even) .content-data__btn {
     background-color: white;
   }
@@ -109,7 +113,7 @@
     font-family: Kozuka Gothic Pr6N;
     font-style: normal;
     font-weight: 900;
-    margin-bottom: 3.200vw;
+    margin: 1.333vw 0 3.200vw 0;
   }
   .banner__heading--sub {
     font-size: 4.267vw;
@@ -201,19 +205,31 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 0;
   }
   .content-figure img {
     width: 100%;
     height: 56.267vw;
+    z-index: -2;
   }
   .content-figure__caption {
-    background-image: url("../img/bg-img.png");
+    position: relative;
     background-repeat: no-repeat;
     background-size: 69.333vw 100%;
     width: 69.333vw;
     height: auto;
     margin-top: -3.600vw;
     font-size: 2.667vw;
+  }
+  .content-figure__caption::before {
+    content: '';
+    background-image: url("../img/bg-img.png");
+    background-repeat: no-repeat;
+    background-size: 69.333vw 100%;
+    width: 69.333vw;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
   }
   .content-figure__caption--wrapper {
     padding: 3.733vw;
@@ -286,56 +302,31 @@
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .content-data__item::before {
+    content: "";
+    width: 3.255vw;
+    height: 3.255vw;
+    margin-top: 0.911vw;
+    margin-left: -11px;
+    margin-right: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .content-data__item:last-child {
     margin-bottom: 0;
   }
   .content-data__item:nth-child(1)::before {
-    content: "";
     background-image: url("../img/icon02.png");
-    width: 3.255vw;
-    height: 3.255vw;
-    margin-top: 0.911vw;
-    margin-left: -4.036vw;
-    margin-right: 2.214vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .content-data__item:nth-child(2)::before {
-    content: "";
     background-image: url("../img/icon03.png");
-    width: 3.255vw;
-    height: 3.255vw;
-    margin-top: 0.911vw;
-    margin-left: -4.036vw;
-    margin-right: 2.214vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .content-data__item:nth-child(3)::before {
-    content: "";
     background-image: url("../img/icon04.png");
-    width: 3.255vw;
-    height: 3.255vw;
-    margin-top: 0.911vw;
-    margin-left: -4.036vw;
-    margin-right: 2.214vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .content-data__item:nth-child(4)::before {
-    content: "";
     background-image: url("../img/icon05.png");
-    width: 3.255vw;
-    height: 3.255vw;
-    margin-top: 0.911vw;
-    margin-left: -4.036vw;
-    margin-right: 2.214vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .content-data__btn {
     width: 30.667vw;
