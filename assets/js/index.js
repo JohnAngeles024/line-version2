@@ -5,7 +5,7 @@ $(document).ready(function () {
         var get = $(this).attr('href');
         var response = confirm(get);
         if (response == true) {
-            window.open("callto:"  + get)
+            window.open("tel:"  + get)
         } else {
            // back to the page
         }
