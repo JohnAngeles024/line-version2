@@ -56,9 +56,8 @@
                         &__btn {
                             width: 30.990vw;
                             height: 7.813vw;
-                            // background-color: white;
                             color: #d27c59;
-                            font-size: 31px;
+                            font-size: 4.133vw;
                             font-family: SFPro, Arial, Noto Sans JP, Noto Sans KR, sans-serif;
                             border-radius: 35px;
                             border: 1px solid #000000;
@@ -70,7 +69,7 @@
 
                             &:nth-child(2) {
                                 margin-left: 1.953vw;
-                                font-size: 34px;
+                                font-size: 4.533vw;
                             }
 
                             &-wrapper {
@@ -277,7 +276,6 @@
                 }
             }
 
-            // &__list {}
 
             &__item {
                 line-height: 5.067vw;

@@ -65,7 +65,7 @@
     width: 30.990vw;
     height: 7.813vw;
     color: #d27c59;
-    font-size: 31px;
+    font-size: 4.133vw;
     font-family: SFPro, Arial, Noto Sans JP, Noto Sans KR, sans-serif;
     border-radius: 35px;
     border: 1px solid #000000;
@@ -83,7 +83,7 @@
   }
   .main__item:nth-child(n+2) .content-data__btn:nth-child(2) {
     margin-left: 1.953vw;
-    font-size: 34px;
+    font-size: 4.533vw;
   }
   .main__item:nth-child(n+2) .content-data__btn-wrapper {
     display: -webkit-box;

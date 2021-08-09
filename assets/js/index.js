@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('#tel').click(function () {
+    $('.tel').click(function () {
         event.preventDefault();
         var get = $(this).attr('href');
         var response = confirm(get);
